@@ -1,0 +1,29 @@
+name: Scheduled Update of Formulae
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "00 18 * * *"
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Check out code
+              uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+            - uses: aquaproj/aqua-installer@ea518c135a02fc11ff8024364510c181a5c6b342 # v4.0.3
+              with:
+                  aqua_version: v2.55.0
+
+            - name: Update formulae
+              run: |
+                  make update
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Commit and push
+              uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
+              with:
+                  add: "Formula/*.rb"
