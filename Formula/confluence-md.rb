@@ -1,27 +1,27 @@
 class ConfluenceMd < Formula
   desc '🧭 From Confluence to clean Markdown, images and all — just one command'
-  version '0.2.0'
+  version '0.3.1'
   homepage 'https://github.com/jackchuka/confluence-md'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.2.0/confluence-md_0.2.0_darwin_arm64.tar.gz'
-      sha256 'c8a7ab52384209da9858947448ec419ddeeeb77d751bdfac3f3120d43566fabc'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.1/confluence-md_0.3.1_darwin_arm64.tar.gz'
+      sha256 '192e79b7a06ca653e3941c23e7b58b81e008ff97ec2cf50596457126ed64eec2'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.2.0/confluence-md_0.2.0_darwin_amd64.tar.gz'
-      sha256 'da40189901ff8201c27862b40999a8c7e965468ba59e7ff5f1a076793662c853'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.1/confluence-md_0.3.1_darwin_amd64.tar.gz'
+      sha256 '7da03d81e0c1473158e4d90f631b7ac75c596ffe1860c43ef7518c2801667b6d'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.2.0/confluence-md_0.2.0_linux_arm64.tar.gz'
-      sha256 '39848af3013bea59e1864618c1f0ced520cfd7ffdf197668e0e917309b6e1640'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.1/confluence-md_0.3.1_linux_arm64.tar.gz'
+      sha256 '4d7454015a09f7ff399ab2787a99bb3171c3717bdb575e8ccfee04cbec6dc00b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.2.0/confluence-md_0.2.0_linux_amd64.tar.gz'
-      sha256 'd3e6f1afbd235fbcda1d1248db3564926d8aa5e1efe5b688f563a746edfaeec6'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.1/confluence-md_0.3.1_linux_amd64.tar.gz'
+      sha256 'd33bf0ba70d99984ea1fd08ffb9c19accc92c01ac298671b435e66d0f671c21e'
     end
   end
 
