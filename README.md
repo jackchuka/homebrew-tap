@@ -21,6 +21,14 @@ brew tap jackchuka/tap
 brew install jackchuka/tap/confluence-md
 ```
 
+### [dutix](https://github.com/jackchuka/dutix)
+
+Set default apps, migrate file associations, and manage handlers on macOS
+
+```bash
+brew install jackchuka/tap/dutix
+```
+
 ### [goalias](https://github.com/jackchuka/goalias)
 
 Instantly standardize Go import aliases across your entire codebase with LSP-powered precision.
@@ -39,7 +47,7 @@ brew install jackchuka/tap/mdschema
 
 ### [poker-rs](https://github.com/jackchuka/poker-rs)
 
-🃏 High-performance poker hand evaluation library written in Rust with a Ratatui TUI for playing No-Limit Texas Hold'em.
+🃏 High-performance poker hand evaluation library written in Rust with a Ratatui TUI for playing No-Limit Texas Hold\'em.
 
 ```bash
 brew install jackchuka/tap/poker-rs
