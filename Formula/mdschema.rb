@@ -1,27 +1,27 @@
 class Mdschema < Formula
   desc '📝 A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.'
-  version '0.5.1'
+  version '0.7.0'
   homepage 'https://github.com/jackchuka/mdschema'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/mdschema/releases/download/v0.5.1/mdschema_0.5.1_darwin_arm64.tar.gz'
-      sha256 '253d086fcf42b62d4e1e756a62a7de4a9a72c031f29833153af27f3964cbfc9e'
+      url 'https://github.com/jackchuka/mdschema/releases/download/v0.7.0/mdschema_0.7.0_darwin_arm64.tar.gz'
+      sha256 '7d752f072245d4d78b0719810fb84698813cb705fd99c6e9df3a68f696eea75a'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/mdschema/releases/download/v0.5.1/mdschema_0.5.1_darwin_amd64.tar.gz'
-      sha256 '11b5f6e4ece2870ae3fbf325df2f4b6439e843071461d45843c8382906e90dc8'
+      url 'https://github.com/jackchuka/mdschema/releases/download/v0.7.0/mdschema_0.7.0_darwin_amd64.tar.gz'
+      sha256 'a95baefc218eea60219dbc8dfaf1207f7bf131baffee117f94a2b5af3008d515'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/mdschema/releases/download/v0.5.1/mdschema_0.5.1_linux_arm64.tar.gz'
-      sha256 '9f94bbb1fb3aa5614d7f6c57136c2f47fe144e3f062980828c6baf28e9bfc927'
+      url 'https://github.com/jackchuka/mdschema/releases/download/v0.7.0/mdschema_0.7.0_linux_arm64.tar.gz'
+      sha256 'a05920fd6df4a53cec1697c35f96648f340db3a4ff5575fe4470b079c2efb34d'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/mdschema/releases/download/v0.5.1/mdschema_0.5.1_linux_amd64.tar.gz'
-      sha256 '447f9f9602690cdb8fc466251d8449341220232ea2dc946f3232f926ff21b024'
+      url 'https://github.com/jackchuka/mdschema/releases/download/v0.7.0/mdschema_0.7.0_linux_amd64.tar.gz'
+      sha256 '948022cab8288c67ff1c84ab281002496a74e4bce6de7311313ffef5a752d8a1'
     end
   end
 
