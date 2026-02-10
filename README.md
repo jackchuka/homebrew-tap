@@ -37,6 +37,14 @@ Instantly standardize Go import aliases across your entire codebase with LSP-pow
 brew install jackchuka/tap/goalias
 ```
 
+### [gv](https://github.com/jackchuka/gv)
+
+Git Vision - monitor multiple git repositories
+
+```bash
+brew install jackchuka/tap/gv
+```
+
 ### [mdschema](https://github.com/jackchuka/mdschema)
 
 📝 A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.
@@ -51,6 +59,14 @@ brew install jackchuka/tap/mdschema
 
 ```bash
 brew install jackchuka/tap/poker-rs
+```
+
+### [slackcli](https://github.com/jackchuka/slackcli)
+
+The Slack CLI and MCP server built for LLM-powered agents and programmatic access.
+
+```bash
+brew install jackchuka/tap/slackcli
 ```
 
 ### [tfpacker](https://github.com/jackchuka/tfpacker)
