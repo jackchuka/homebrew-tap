@@ -45,6 +45,14 @@ Git Vision - monitor multiple git repositories
 brew install jackchuka/tap/gv
 ```
 
+### [hpp](https://github.com/jackchuka/hpp)
+
+CLI tool for searching Japanese restaurants using the HotPepper Gourmet API
+
+```bash
+brew install jackchuka/tap/hpp
+```
+
 ### [mdschema](https://github.com/jackchuka/mdschema)
 
 📝 A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.
