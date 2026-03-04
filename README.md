@@ -13,6 +13,14 @@ brew tap jackchuka/tap
 ## Packages
 
 <!-- PACKAGES_START -->
+### [ccli](https://github.com/jackchuka/ccli)
+
+A unified CLI for inspecting your Claude Code installation — MCP servers, skills, rules, projects, and metadata.
+
+```bash
+brew install jackchuka/tap/ccli
+```
+
 ### [confluence-md](https://github.com/jackchuka/confluence-md)
 
 🧭 From Confluence to clean Markdown, images and all — just one command
@@ -51,6 +59,14 @@ CLI tool for searching Japanese restaurants using the HotPepper Gourmet API
 
 ```bash
 brew install jackchuka/tap/hpp
+```
+
+### [latch](https://github.com/jackchuka/latch)
+
+Task runner with approval gates. Define multi-step command pipelines, gate irreversible actions behind human approval, and optionally schedule them with cron.
+
+```bash
+brew install jackchuka/tap/latch
 ```
 
 ### [mdschema](https://github.com/jackchuka/mdschema)
