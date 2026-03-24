@@ -36,4 +36,10 @@ class Latch < Formula
     end
     bin.install 'latch'
   end
+
+  def post_install
+    if OS.mac?
+      system 'codesign', '-s', '-', '-i', 'com.latch.cli', '-f', bin/'latch'
+    end
+  end
 end
