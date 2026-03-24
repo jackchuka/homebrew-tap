@@ -101,4 +101,12 @@ brew install jackchuka/tap/slackcli
 brew install jackchuka/tap/tfpacker
 ```
 
+### [timestack](https://github.com/jackchuka/timestack)
+
+Time, in layers. A countdown timer that nests.
+
+```bash
+brew install --cask jackchuka/tap/timestack
+```
+
 <!-- PACKAGES_END -->

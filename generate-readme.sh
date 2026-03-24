@@ -6,16 +6,10 @@ temp_packages=$(mktemp)
 for formula in Formula/*.rb; do
   [ -f "$formula" ] || continue
 
-  # Extract package name (filename without .rb)
   package=$(basename "$formula" .rb)
-
-  # Extract homepage URL from the formula
   homepage=$(grep "homepage" "$formula" | sed "s/.*homepage '\(.*\)'/\1/")
-
-  # Extract description
   desc=$(grep "desc" "$formula" | sed "s/.*desc '\(.*\)'/\1/")
 
-  # Build package entry with installation command
   cat >> "$temp_packages" << EOF
 ### [$package]($homepage)
 
@@ -23,6 +17,25 @@ $desc
 
 \`\`\`bash
 brew install jackchuka/tap/$package
+\`\`\`
+
+EOF
+done
+
+for cask in Casks/*.rb; do
+  [ -f "$cask" ] || continue
+
+  package=$(basename "$cask" .rb)
+  homepage=$(grep "homepage" "$cask" | sed 's/.*homepage "\(.*\)"/\1/')
+  desc=$(grep "desc" "$cask" | sed 's/.*desc "\(.*\)"/\1/')
+
+  cat >> "$temp_packages" << EOF
+### [$package]($homepage)
+
+$desc
+
+\`\`\`bash
+brew install --cask jackchuka/tap/$package
 \`\`\`
 
 EOF
