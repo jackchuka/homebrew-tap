@@ -1,4 +1,4 @@
-name: Scheduled Update of Formulae
+name: Scheduled Update of Formulae and Casks
 on:
     workflow_dispatch:
     schedule:
@@ -26,4 +26,4 @@ jobs:
             - name: Commit and push
               uses: EndBug/add-and-commit@290ea2c423ad77ca9c62ae0f5b224379612c0321 # v10.0.0
               with:
-                  add: "Formula/*.rb"
+                  add: "Formula/*.rb Casks/*.rb"
