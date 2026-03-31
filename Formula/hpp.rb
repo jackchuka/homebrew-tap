@@ -1,27 +1,27 @@
 class Hpp < Formula
   desc 'CLI tool for searching Japanese restaurants using the HotPepper Gourmet API'
-  version '0.2.1'
+  version '0.2.2'
   homepage 'https://github.com/jackchuka/hpp'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.1/hpp_0.2.1_darwin_arm64.tar.gz'
-      sha256 '8bf82a72b75195cc738713d5ddd4b028f9fa9bbfb3b06856a36d66efc31a2506'
+      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.2/hpp_0.2.2_darwin_arm64.tar.gz'
+      sha256 '3a69da6eefa25b847266572d660cd76e1af1aa2c1aba7406b31d5f210ffd98a3'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.1/hpp_0.2.1_darwin_amd64.tar.gz'
-      sha256 'd3837e79b06f564ca06fd4d9c5b388ace799f169091d2e491cdcc7166884a2d6'
+      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.2/hpp_0.2.2_darwin_amd64.tar.gz'
+      sha256 '821f164d16d1fa5a91bda8753bfa8e7cdacfcf644457d75211495a786c1b7e12'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.1/hpp_0.2.1_linux_arm64.tar.gz'
-      sha256 '24889cc3fb94b11a6b5200f71077e88bf320ff0d7d37aaca8fbf76a8268257ac'
+      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.2/hpp_0.2.2_linux_arm64.tar.gz'
+      sha256 'ccbee883396926395a5285a1af806165334b4c9885c75545a18ab38c4926e8ad'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.1/hpp_0.2.1_linux_amd64.tar.gz'
-      sha256 '3031f30ff54a11d7bf2af4053a35b1d9342e96addfe1d38baf44a292a8a62c2b'
+      url 'https://github.com/jackchuka/hpp/releases/download/v0.2.2/hpp_0.2.2_linux_amd64.tar.gz'
+      sha256 '9c6801de9a06b4da7a92ccc9063ba81c50457ac4dc477d177c5fafcf60c13e15'
     end
   end
 

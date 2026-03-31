@@ -1,27 +1,27 @@
 class Gv < Formula
   desc 'Git Vision - monitor multiple git repositories'
-  version '0.1.4'
+  version '0.1.5'
   homepage 'https://github.com/jackchuka/gv'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/gv/releases/download/v0.1.4/gv_0.1.4_darwin_arm64.tar.gz'
-      sha256 '2a1df4d24840254b25263dbd166b59f0bed5c62ca80530aefcc6710886b6c24c'
+      url 'https://github.com/jackchuka/gv/releases/download/v0.1.5/gv_0.1.5_darwin_arm64.tar.gz'
+      sha256 'f8a819b90c5c74fb8901fa5a5a4ca57a32584c90c39c1a135cc78880a3562f60'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/gv/releases/download/v0.1.4/gv_0.1.4_darwin_amd64.tar.gz'
-      sha256 'd180cf7ef75ce583e719be9343b56a7d4adc0c107ba1da1cddeed6d7bcc5d6cb'
+      url 'https://github.com/jackchuka/gv/releases/download/v0.1.5/gv_0.1.5_darwin_amd64.tar.gz'
+      sha256 'da3f8f1d54e2734abd1548395197fd1d1bb5946cd710483e3caa91f94938978c'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/gv/releases/download/v0.1.4/gv_0.1.4_linux_arm64.tar.gz'
-      sha256 '0df2dab19ca1b93fb5908ff5fe7216faf0d8e37a1de937e1419f55d7f0502b21'
+      url 'https://github.com/jackchuka/gv/releases/download/v0.1.5/gv_0.1.5_linux_arm64.tar.gz'
+      sha256 '59d80691b6d3e9be6ea898087a67842fb616493e7ae61d6d25cb53de877ec1c2'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/gv/releases/download/v0.1.4/gv_0.1.4_linux_amd64.tar.gz'
-      sha256 '3cf00d250bd33e58b730972a5c1986e6d1451370b95d3d5a94239a9ef27a2fa9'
+      url 'https://github.com/jackchuka/gv/releases/download/v0.1.5/gv_0.1.5_linux_amd64.tar.gz'
+      sha256 '04cd918b74124ccb9e2aea0e3e513673293a21d7bd9ec62377085c273a141937'
     end
   end
 
