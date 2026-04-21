@@ -1,13 +1,13 @@
 cask "timestack" do
-  version "0.2.3"
+  version "0.2.4"
 
   on_arm do
-    sha256 "2d5de6cbb6c2f7fda9c9cdbfb06532667e6ffad133de6afb495b30f89e98c2f8"
+    sha256 "14f409c55b6de9eb16e840c4b9198096826c70a111e59d8f5866d7ea44a81c20"
 
     url "https://github.com/jackchuka/timestack/releases/download/v#{version}/timestack_#{version}_aarch64.dmg"
   end
   on_intel do
-    sha256 "6f288ee66a940d073eb30709b16d65835410b949100e8def5c0145eeefdc3852"
+    sha256 "a6718bdeb17db0f4c30c3ffc16944ae593b0ee12c46df744deb1aa826610103a"
 
     url "https://github.com/jackchuka/timestack/releases/download/v#{version}/timestack_#{version}_x64.dmg"
   end
