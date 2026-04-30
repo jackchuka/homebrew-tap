@@ -1,27 +1,27 @@
 class ConfluenceMd < Formula
   desc '🧭 From Confluence to clean Markdown, images and all — just one command'
-  version '0.3.10'
+  version '0.3.11'
   homepage 'https://github.com/jackchuka/confluence-md'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.10/confluence-md_0.3.10_darwin_arm64.tar.gz'
-      sha256 'b6b8c7aa98e6a721426922621d077527c233e952582caea19af7b68ce0fc1a32'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.11/confluence-md_0.3.11_darwin_arm64.tar.gz'
+      sha256 '32bfb7d08863cbbbdcb400037151231e2e165fb9ab9e37939fcdf7a557fc773a'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.10/confluence-md_0.3.10_darwin_amd64.tar.gz'
-      sha256 '710e895f748ab42d33bcce8ef9e1dfa23860cb89f58fe7e0849733d12d4b82f2'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.11/confluence-md_0.3.11_darwin_amd64.tar.gz'
+      sha256 '5fbaa9743c14df4804998b82331179e35440e3f686dc5dab741529d6aa1f9df3'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.10/confluence-md_0.3.10_linux_arm64.tar.gz'
-      sha256 '01b2b5fe844c788e4dc905690312834b456ceb3dc3e7e3c149a19f9621331ad6'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.11/confluence-md_0.3.11_linux_arm64.tar.gz'
+      sha256 'e3f9c93f3335cc6b22a0fd24e18e10f96cf5ea2ffffb1f99ab8d6a7f4c9f0aca'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.10/confluence-md_0.3.10_linux_amd64.tar.gz'
-      sha256 '150c63322de833b30b0aa82a19751f569d45e3b6e85b35fb1f9483ab91827562'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.11/confluence-md_0.3.11_linux_amd64.tar.gz'
+      sha256 '2a977ae7e6ea428de1563d90800d987b9395b1886448927d182e8142282e5c5b'
     end
   end
 
