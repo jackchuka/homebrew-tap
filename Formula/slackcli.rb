@@ -1,27 +1,27 @@
 class Slackcli < Formula
   desc 'The Slack CLI and MCP server built for LLM-powered agents and programmatic access.'
-  version '0.3.10'
+  version '0.3.11'
   homepage 'https://github.com/jackchuka/slackcli'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.10/slackcli_0.3.10_darwin_arm64.tar.gz'
-      sha256 '730072ba063dee29719ea4e9993dc18be1f283dc90d84b67878ceeba08666708'
+      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.11/slackcli_0.3.11_darwin_arm64.tar.gz'
+      sha256 '0c8a89dccb5050902ab694eed71b35ad12394fbb0b63af3d56d5889bb848ea40'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.10/slackcli_0.3.10_darwin_amd64.tar.gz'
-      sha256 '5157cd0062e47b2a3c6a97e26bb0d07b488e80f25d10bc83ff316b5b45698521'
+      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.11/slackcli_0.3.11_darwin_amd64.tar.gz'
+      sha256 '231edb620a6c483a76ce2a6ea1dda2555a00d548201d51adff1d9b2e77156c7c'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.10/slackcli_0.3.10_linux_arm64.tar.gz'
-      sha256 '2cad413b1ea3b665a7990bc6d047b744e3f246ad7d4d84113e265d9c86f692d8'
+      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.11/slackcli_0.3.11_linux_arm64.tar.gz'
+      sha256 '693e04a9593fc9b10c893577799656abd524ce7211d0d80b1d827f916acdbf42'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.10/slackcli_0.3.10_linux_amd64.tar.gz'
-      sha256 'af35d4af351bc7106f0574545c5487c382646926be28cb07216396b6ed039213'
+      url 'https://github.com/jackchuka/slackcli/releases/download/v0.3.11/slackcli_0.3.11_linux_amd64.tar.gz'
+      sha256 'b1667683ce52dfea2b0ac82b5d036333c94911c167523600ada0580b9a559f4b'
     end
   end
 
