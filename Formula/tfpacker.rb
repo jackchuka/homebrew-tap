@@ -1,27 +1,27 @@
 class Tfpacker < Formula
   desc '🧩 A Terraform file packer that organizes resource, module, data, and variable blocks into clean, rule-based .tf files. 💡 Supports custom grouping by type, name prefix, or both — with optional YAML config.'
-  version '0.2.6'
+  version '0.2.7'
   homepage 'https://github.com/jackchuka/tfpacker'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.6/tfpacker_0.2.6_darwin_arm64.tar.gz'
-      sha256 'e0f61135473f48d2ea73817f16aec084e051c5065060e12fa39f3b0c44741593'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_darwin_arm64.tar.gz'
+      sha256 '054be9eaf09519630060c0efe25cce4a420a41e2a29227e4b090fb3ffaf90226'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.6/tfpacker_0.2.6_darwin_amd64.tar.gz'
-      sha256 '81f7e54aa24b2d30443941194424e0ff4cbd088d219745d1559c2ae8edeca0db'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_darwin_amd64.tar.gz'
+      sha256 'ffe0edc61aa070db4e940b026deb6388d49ca5c75548f32f9e3629eb1161d78a'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.6/tfpacker_0.2.6_linux_arm64.tar.gz'
-      sha256 'b012eb98a4c904c8a18325190c44538f0a2665ee7e8dd5606cce913364c4932e'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_linux_arm64.tar.gz'
+      sha256 '6d465c6c7aa6cbd81b8b5fa82717e20939a3281f815cf9a4eab87ce1b657b5f7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.6/tfpacker_0.2.6_linux_amd64.tar.gz'
-      sha256 'bfe03cdb4e34181ea600159e326f9db48e093c16348d2c5ffb34421cf2e2c8a2'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_linux_amd64.tar.gz'
+      sha256 '7dacd744d831d78951215f43adfa6e7b532808059c4065eae7a97d4004ea9e80'
     end
   end
 

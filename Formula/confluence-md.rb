@@ -1,27 +1,27 @@
 class ConfluenceMd < Formula
   desc '🧭 From Confluence to clean Markdown, images and all — just one command'
-  version '0.3.12'
+  version '0.3.13'
   homepage 'https://github.com/jackchuka/confluence-md'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.12/confluence-md_0.3.12_darwin_arm64.tar.gz'
-      sha256 '58c91c03d989e714aecc14b41c65ab5afbbd27d147140fb9b4377b7a8b430795'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.13/confluence-md_0.3.13_darwin_arm64.tar.gz'
+      sha256 '21adf0d4e085fd33b6bc3c8338dbd3a018f64218772913f590363faa1316b3d1'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.12/confluence-md_0.3.12_darwin_amd64.tar.gz'
-      sha256 '633f08b82e6aa8ce6f1013f93c6a75dedd7d342336404fbf7195481fe2d0048a'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.13/confluence-md_0.3.13_darwin_amd64.tar.gz'
+      sha256 'f991e684a387621b0e1e1a41352741278ee4bd0ccbcbebab42e5269afbabad3d'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.12/confluence-md_0.3.12_linux_arm64.tar.gz'
-      sha256 '3da6ce2e98ac23cba8073af35112615b0de3aee47a12bdc717828ce99ed340b8'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.13/confluence-md_0.3.13_linux_arm64.tar.gz'
+      sha256 '9496fed07721ff9198fa60d331b511ed2ff1017553898db9a670340fbf0aba68'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.12/confluence-md_0.3.12_linux_amd64.tar.gz'
-      sha256 'b376263447eb66ed9cf8fd2138dad75e50a932787e69997398d26d67d9333b7b'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.13/confluence-md_0.3.13_linux_amd64.tar.gz'
+      sha256 '2972ed1a5f13bc3e97ebd5cf1245c002494498ecb18abb38ad10d76c3b5e0e1f'
     end
   end
 
