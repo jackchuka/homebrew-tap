@@ -1,27 +1,27 @@
 class ConfluenceMd < Formula
   desc '🧭 From Confluence to clean Markdown, images and all — just one command'
-  version '0.3.14'
+  version '0.3.15'
   homepage 'https://github.com/jackchuka/confluence-md'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.14/confluence-md_0.3.14_darwin_arm64.tar.gz'
-      sha256 '7cf47ef8ee576a5d26425e41e80800a0f3ae300a577ae15b9b0beaf28a196dfb'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.15/confluence-md_0.3.15_darwin_arm64.tar.gz'
+      sha256 '8a145c7abe851ee7eefbdc92d58e00af18697397c1e92dc77fd22c8df114f86b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.14/confluence-md_0.3.14_darwin_amd64.tar.gz'
-      sha256 'fcb6f18fd5964e57f02f90ba6d7ed66e15b5ec9535994b214abf0bf431a322b0'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.15/confluence-md_0.3.15_darwin_amd64.tar.gz'
+      sha256 '1e0fecc58bc12e0227fca50c4ab15ddf61d9fdc4979461dec844672f73d2995b'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.14/confluence-md_0.3.14_linux_arm64.tar.gz'
-      sha256 '05671d7c45383e1d6a0852f53e67875a35a817aadd84daa8fa5c4c8e4e740e49'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.15/confluence-md_0.3.15_linux_arm64.tar.gz'
+      sha256 '1fc2d278531685f1bf844bb7bbf9aaae790f594d86883bdc2398e723b428261e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.14/confluence-md_0.3.14_linux_amd64.tar.gz'
-      sha256 '90417722921c3939db566d5134fce68f98a228476cd2acae181d39545a564956'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.15/confluence-md_0.3.15_linux_amd64.tar.gz'
+      sha256 '956482719f47cc833ddfa8733cd2340607cab5594a34ff8d2f7b9727f546e45e'
     end
   end
 
