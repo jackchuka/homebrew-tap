@@ -1,27 +1,27 @@
 class Tfpacker < Formula
   desc '🧩 A Terraform file packer that organizes resource, module, data, and variable blocks into clean, rule-based .tf files. 💡 Supports custom grouping by type, name prefix, or both — with optional YAML config.'
-  version '0.2.7'
+  version '0.2.8'
   homepage 'https://github.com/jackchuka/tfpacker'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_darwin_arm64.tar.gz'
-      sha256 '054be9eaf09519630060c0efe25cce4a420a41e2a29227e4b090fb3ffaf90226'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.8/tfpacker_0.2.8_darwin_arm64.tar.gz'
+      sha256 '312b2216e315e19f5323b61008ba0672c6ab4d07ad1b7a56ff72cd1e04a5f104'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_darwin_amd64.tar.gz'
-      sha256 'ffe0edc61aa070db4e940b026deb6388d49ca5c75548f32f9e3629eb1161d78a'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.8/tfpacker_0.2.8_darwin_amd64.tar.gz'
+      sha256 'b7dea8a77550a1631f90dd8e45f96f6b89a04af5adc70b7be35e44cd7ecafa5a'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_linux_arm64.tar.gz'
-      sha256 '6d465c6c7aa6cbd81b8b5fa82717e20939a3281f815cf9a4eab87ce1b657b5f7'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.8/tfpacker_0.2.8_linux_arm64.tar.gz'
+      sha256 '609341761ee7bdd7866a9bdb47b6358272f5ffcba56a90b9b7d7655c55e03a79'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.7/tfpacker_0.2.7_linux_amd64.tar.gz'
-      sha256 '7dacd744d831d78951215f43adfa6e7b532808059c4065eae7a97d4004ea9e80'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.8/tfpacker_0.2.8_linux_amd64.tar.gz'
+      sha256 '72f8cf953dcfa7daaacbe4080329468fb2d45d73cf76019b78feb08631e629a5'
     end
   end
 

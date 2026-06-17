@@ -1,27 +1,27 @@
 class Goalias < Formula
   desc 'Instantly standardize Go import aliases across your entire codebase with LSP-powered precision.'
-  version '1.0.8'
+  version '1.0.9'
   homepage 'https://github.com/jackchuka/goalias'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.8/goalias_1.0.8_darwin_arm64.tar.gz'
-      sha256 '31a5b60f80ae9cf6ae1bc813e3c65b2009acff08603359a07f080c3607d0c9c2'
+      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.9/goalias_1.0.9_darwin_arm64.tar.gz'
+      sha256 'a31406a21ceb4166d9ca6c0d39d60e01a52bf4acd2cf3df51ac6e597a0a16e1f'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.8/goalias_1.0.8_darwin_amd64.tar.gz'
-      sha256 'b5036f077e725060e9171131709d89c2b3efcf929e2f9c139ddc397457bd6be3'
+      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.9/goalias_1.0.9_darwin_amd64.tar.gz'
+      sha256 'be5d154e3961a907ef9cfd3ba519c878e56a08ab66f78f1fa28f0d1f79ed74c4'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.8/goalias_1.0.8_linux_arm64.tar.gz'
-      sha256 '912a6a5da34a7435196fde3ff458e8a4fff117fcd292e4d01a912b2daac222c4'
+      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.9/goalias_1.0.9_linux_arm64.tar.gz'
+      sha256 '8b5d483d352058ac9b6f8ea36d12bfd5603d0f2000f55af831f0c466132ce260'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.8/goalias_1.0.8_linux_amd64.tar.gz'
-      sha256 '86cc7f6f1030de2ec55a6873a09a840a426b20a5522b4b26efce273dc9257847'
+      url 'https://github.com/jackchuka/goalias/releases/download/v1.0.9/goalias_1.0.9_linux_amd64.tar.gz'
+      sha256 '1e57c5a919ca782a6e137e24e6ddc5ebf36b189a9571352f326ba5d3cb83974e'
     end
   end
 
