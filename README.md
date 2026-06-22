@@ -93,6 +93,14 @@ brew install jackchuka/tap/mdschema
 brew install jackchuka/tap/poker-rs
 ```
 
+### [postura](https://github.com/jackchuka/postura)
+
+A deterministic CLI that audits your GitHub enterprise, orgs, and repos against a security baseline you own — rules are data, the bar is per-target.
+
+```bash
+brew install jackchuka/tap/postura
+```
+
 ### [slackcli](https://github.com/jackchuka/slackcli)
 
 The Slack CLI and MCP server built for LLM-powered agents and programmatic access.
