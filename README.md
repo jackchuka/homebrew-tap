@@ -37,6 +37,14 @@ Set default apps, migrate file associations, and manage handlers on macOS
 brew install jackchuka/tap/dutix
 ```
 
+### [git-customs](https://github.com/jackchuka/git-customs)
+
+Pre-push gate that catches PII and secrets before they reach a public remote
+
+```bash
+brew install jackchuka/tap/git-customs
+```
+
 ### [goalias](https://github.com/jackchuka/goalias)
 
 Instantly standardize Go import aliases across your entire codebase with LSP-powered precision.
@@ -103,7 +111,7 @@ brew install jackchuka/tap/tfpacker
 
 ### [timestack](https://github.com/jackchuka/timestack)
 
-Time, in layers. A countdown timer that nests.
+Time, in layers. A countdown timer that nests
 
 ```bash
 brew install --cask jackchuka/tap/timestack
