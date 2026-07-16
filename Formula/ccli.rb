@@ -1,27 +1,27 @@
 class Ccli < Formula
   desc 'A unified CLI for inspecting your Claude Code installation — MCP servers, skills, rules, projects, and metadata.'
-  version '0.4.8'
+  version '0.4.9'
   homepage 'https://github.com/jackchuka/ccli'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.8/ccli_0.4.8_darwin_arm64.tar.gz'
-      sha256 '6f693b4e03b1dff10b4985a1014ee71c6452c6c00b796fa9818ab4556ba047ae'
+      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.9/ccli_0.4.9_darwin_arm64.tar.gz'
+      sha256 'e093276dc2f1d588eae1643ba52b985b70bd7ead99ae5e1e93caf5fd34c2c975'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.8/ccli_0.4.8_darwin_amd64.tar.gz'
-      sha256 'f6b60c4c677941c40a18f843ce566624b69ef33fdb7ecbbd904be8a1a6e6454c'
+      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.9/ccli_0.4.9_darwin_amd64.tar.gz'
+      sha256 '55c7ce2b0d0147d73c6286916aa79df9452369faab6f8465dcabdad4d8fce454'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.8/ccli_0.4.8_linux_arm64.tar.gz'
-      sha256 'de6748de185dcfd1db5b29343f6e81d5d443501b2d55e60ba3b1316fe99f7dd6'
+      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.9/ccli_0.4.9_linux_arm64.tar.gz'
+      sha256 '0713e4516eb1fe356009a9499c70e843a3d8e30d496792cccd65de21a295b5e5'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.8/ccli_0.4.8_linux_amd64.tar.gz'
-      sha256 '1a6da4aee239579e9b7938dc9a171e271d012cfab46514ebcfcd35ecabd313f0'
+      url 'https://github.com/jackchuka/ccli/releases/download/v0.4.9/ccli_0.4.9_linux_amd64.tar.gz'
+      sha256 '4c1de21efe6a6de724173dc90050d3fd25a63294654119a477ddda95e007f2b9'
     end
   end
 
