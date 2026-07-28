@@ -1,27 +1,27 @@
 class Latch < Formula
   desc 'Task runner with approval gates. Define multi-step command pipelines, gate irreversible actions behind human approval, and optionally schedule them with cron.'
-  version '0.6.7'
+  version '0.6.8'
   homepage 'https://github.com/jackchuka/latch'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/latch/releases/download/v0.6.7/latch_0.6.7_darwin_arm64.tar.gz'
-      sha256 'dce86557269146a888ffcbea1e5c7a46faab54a963b54bd709ca514c4bb1a678'
+      url 'https://github.com/jackchuka/latch/releases/download/v0.6.8/latch_0.6.8_darwin_arm64.tar.gz'
+      sha256 '1393927b0b05c4e12169c312487890b411138f91a705dac0094d7e361e0f5008'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/latch/releases/download/v0.6.7/latch_0.6.7_darwin_amd64.tar.gz'
-      sha256 '5e86be35b4e6c3e9aebad9f286582165715b0d1eea798775ef2bd0053fcdac73'
+      url 'https://github.com/jackchuka/latch/releases/download/v0.6.8/latch_0.6.8_darwin_amd64.tar.gz'
+      sha256 '07ce4fc3c1d254596a38a83ab31ef1f35a60bd92a57d0a836d51c07e2428597a'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/latch/releases/download/v0.6.7/latch_0.6.7_linux_arm64.tar.gz'
-      sha256 '5bac458e23faea133125077618e36ecc74270010d213d777b0a86566cedae9d5'
+      url 'https://github.com/jackchuka/latch/releases/download/v0.6.8/latch_0.6.8_linux_arm64.tar.gz'
+      sha256 '4bc99283e488197e2daa3a0a125cbe57cf6a65600001c717a33b3dc88c029f11'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/latch/releases/download/v0.6.7/latch_0.6.7_linux_amd64.tar.gz'
-      sha256 'c53d8de584a4b794534f2b1a5757d70a95ce3593401ca3205824045c53192b68'
+      url 'https://github.com/jackchuka/latch/releases/download/v0.6.8/latch_0.6.8_linux_amd64.tar.gz'
+      sha256 '8663d6a0db4493e8884e6d6836afb2c3582d012866b1ac41e5abbaa3b7ad4592'
     end
   end
 
