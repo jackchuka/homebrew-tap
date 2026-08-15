@@ -37,6 +37,14 @@ Set default apps, migrate file associations, and manage handlers on macOS
 brew install jackchuka/tap/dutix
 ```
 
+### [edinet](https://github.com/jackchuka/edinet-cli)
+
+A single-binary CLI for EDINET — search, download, and extract Japanese corporate filings from the FSA disclosure system
+
+```bash
+brew install jackchuka/tap/edinet
+```
+
 ### [git-customs](https://github.com/jackchuka/git-customs)
 
 Pre-push gate that catches PII and secrets before they reach a public remote
