@@ -1,16 +1,16 @@
 class Dutix < Formula
   desc 'Set default apps, migrate file associations, and manage handlers on macOS'
-  version '0.2.2'
+  version '0.2.3'
   homepage 'https://github.com/jackchuka/dutix'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/dutix/releases/download/v0.2.2/dutix_0.2.2_darwin_arm64.tar.gz'
-      sha256 '34bae045f070e4ff6ec672e03c655b17c457dcbe02dc4fef8bf2430c0f787b48'
+      url 'https://github.com/jackchuka/dutix/releases/download/v0.2.3/dutix_0.2.3_darwin_arm64.tar.gz'
+      sha256 '2ebca4e973aa096bedc9aecf64e1891a3c206d034cb690382ee6c4c8fa3ef804'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/dutix/releases/download/v0.2.2/dutix_0.2.2_darwin_amd64.tar.gz'
-      sha256 '85d75329ddb97a63ed591a7ca448641e80fba7636429bd269ad89125104fcb34'
+      url 'https://github.com/jackchuka/dutix/releases/download/v0.2.3/dutix_0.2.3_darwin_amd64.tar.gz'
+      sha256 '35347d275100926b32015a88eb1dd79538049f4481de1973cdd1453fe67e9075'
     end
   end
 
