@@ -1,27 +1,27 @@
 class ConfluenceMd < Formula
   desc '🧭 From Confluence to clean Markdown, images and all — just one command'
-  version '0.3.23'
+  version '0.3.24'
   homepage 'https://github.com/jackchuka/confluence-md'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.23/confluence-md_0.3.23_darwin_arm64.tar.gz'
-      sha256 '59bee3ef8d9dfb24c114d7d830178c6c6df5e2648329fa07161f8ae5882656cc'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.24/confluence-md_0.3.24_darwin_arm64.tar.gz'
+      sha256 '4afd0ed764dafcf32c2539243f82968a3f9e31a5718ad68d103c651c50a12d16'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.23/confluence-md_0.3.23_darwin_amd64.tar.gz'
-      sha256 'ceb22ee3aa1cf2523688a3544feb7a015f7a3c8102b56c8e3834765d342d6301'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.24/confluence-md_0.3.24_darwin_amd64.tar.gz'
+      sha256 'cf7b597a2d54e06d1060808eb88d05f2ac3016d0ee432bcc9cdeb42a897b6ce7'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.23/confluence-md_0.3.23_linux_arm64.tar.gz'
-      sha256 'f00688ce4b6939f4b7777b30d97160a9c6d2c03cb6892df6e235055fbd1aca08'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.24/confluence-md_0.3.24_linux_arm64.tar.gz'
+      sha256 'ffe8d2bb2ec3abdcc28122b4a58ce6a51c726e8d370dcb89ca0fde40369b7c9e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.23/confluence-md_0.3.23_linux_amd64.tar.gz'
-      sha256 '78733af2d7a634c7efc3ddd7530df3a81c540968d23c4dd188d91e8034e157a1'
+      url 'https://github.com/jackchuka/confluence-md/releases/download/v0.3.24/confluence-md_0.3.24_linux_amd64.tar.gz'
+      sha256 'ba67de6c6e4a1e9ca98d85cf004978c275c14d9f43eb95f15e170a5e038e3214'
     end
   end
 
