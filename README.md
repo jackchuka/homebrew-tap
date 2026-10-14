@@ -23,7 +23,7 @@ brew install jackchuka/tap/ccli
 
 ### [confluence-md](https://github.com/jackchuka/confluence-md)
 
-🧭 From Confluence to clean Markdown, images and all — just one command
+Convert Confluence pages to clean Markdown, images included
 
 ```bash
 brew install jackchuka/tap/confluence-md
@@ -87,7 +87,7 @@ brew install jackchuka/tap/latch
 
 ### [mdschema](https://github.com/jackchuka/mdschema)
 
-📝 A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.
+Declarative schema-based Markdown structure validator
 
 ```bash
 brew install jackchuka/tap/mdschema

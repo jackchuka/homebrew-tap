@@ -1,5 +1,5 @@
 class Mdschema < Formula
-  desc '📝 A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.'
+  desc 'Declarative schema-based Markdown structure validator'
   version '0.15.5'
   homepage 'https://github.com/jackchuka/mdschema'
 
