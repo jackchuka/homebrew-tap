@@ -8,7 +8,7 @@ for formula in Formula/*.rb; do
 
   package=$(basename "$formula" .rb)
   homepage=$(grep "homepage" "$formula" | sed "s/.*homepage '\(.*\)'/\1/")
-  desc=$(grep "desc" "$formula" | sed "s/.*desc '\(.*\)'/\1/")
+  desc=$(grep -m1 "^  desc " "$formula" | sed -E "s/^  desc ['\"](.*)['\"]$/\1/")
 
   cat >> "$temp_packages" << EOF
 ### [$package]($homepage)

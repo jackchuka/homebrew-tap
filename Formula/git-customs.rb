@@ -1,5 +1,5 @@
 class GitCustoms < Formula
-  desc 'Pre-push gate that catches PII and secrets before they reach a public remote'
+  desc 'Client-side, cross-host pre-push gate that catches PII and secrets — using an engine you choose — before anything reaches a public remote.'
   version '0.1.6'
   homepage 'https://github.com/jackchuka/git-customs'
 

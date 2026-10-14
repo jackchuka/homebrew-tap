@@ -1,5 +1,5 @@
 class ConfluenceMd < Formula
-  desc '🧭 From Confluence to clean Markdown, images and all — just one command'
+  desc 'From Confluence to clean Markdown, images and all, in one command'
   version '0.3.24'
   homepage 'https://github.com/jackchuka/confluence-md'
 
