@@ -95,7 +95,7 @@ brew install jackchuka/tap/mdschema
 
 ### [poker-rs](https://github.com/jackchuka/poker-rs)
 
-🃏 High-performance poker hand evaluation library written in Rust with a Ratatui TUI for playing No-Limit Texas Hold\'em.
+Poker hand evaluator with a terminal No-Limit Texas Hold'em game
 
 ```bash
 brew install jackchuka/tap/poker-rs
@@ -119,7 +119,7 @@ brew install jackchuka/tap/slackcli
 
 ### [tfpacker](https://github.com/jackchuka/tfpacker)
 
-🧩 A Terraform file packer that organizes resource, module, data, and variable blocks into clean, rule-based .tf files. 💡 Supports custom grouping by type, name prefix, or both — with optional YAML config.
+Organize Terraform blocks into rule-based .tf files
 
 ```bash
 brew install jackchuka/tap/tfpacker

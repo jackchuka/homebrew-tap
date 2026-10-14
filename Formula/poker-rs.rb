@@ -1,5 +1,5 @@
 class PokerRs < Formula
-  desc '🃏 High-performance poker hand evaluation library written in Rust with a Ratatui TUI for playing No-Limit Texas Hold\'em.'
+  desc "Poker hand evaluator with a terminal No-Limit Texas Hold'em game"
   version '0.1.0'
   homepage 'https://github.com/jackchuka/poker-rs'
 
@@ -22,14 +22,15 @@ class PokerRs < Formula
   end
 
   head do
-    url 'https://github.com/jackchuka/poker-rs.git'
-    depends_on 'go' => :build
+    url 'https://github.com/jackchuka/poker-rs.git', branch: 'main'
+    depends_on 'rust' => :build
   end
 
   def install
     if build.head?
-      system 'make', 'build'
+      system 'cargo', 'install', *std_cargo_args
+    else
+      bin.install 'poker-rs'
     end
-    bin.install 'poker-rs'
   end
 end
