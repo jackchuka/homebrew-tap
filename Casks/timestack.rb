@@ -13,7 +13,7 @@ cask "timestack" do
   end
 
   name "Timestack"
-  desc "Time, in layers. A countdown timer that nests"
+  desc "Timestack is a countdown timer that nests. Define your agenda as a tree of timed segments"
   homepage "https://github.com/jackchuka/timestack"
 
   app "timestack.app"

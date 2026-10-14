@@ -1,5 +1,5 @@
 class Tfpacker < Formula
-  desc 'Organize Terraform blocks into rule-based .tf files'
+  desc 'Organize Terraform resource, module, data, and variable blocks into clean, rule-based .tf files. Group by type, name prefix, or both, with optional YAML config.'
   version '0.2.13'
   homepage 'https://github.com/jackchuka/tfpacker'
 

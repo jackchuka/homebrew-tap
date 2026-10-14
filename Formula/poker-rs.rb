@@ -1,5 +1,5 @@
 class PokerRs < Formula
-  desc "Poker hand evaluator with a terminal No-Limit Texas Hold'em game"
+  desc "High-performance poker hand evaluation library written in Rust, with a Ratatui TUI for playing No-Limit Texas Hold'em."
   version '0.1.0'
   homepage 'https://github.com/jackchuka/poker-rs'
 

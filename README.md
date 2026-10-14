@@ -23,7 +23,7 @@ brew install jackchuka/tap/ccli
 
 ### [confluence-md](https://github.com/jackchuka/confluence-md)
 
-Convert Confluence pages to clean Markdown, images included
+From Confluence to clean Markdown, images and all, in one command
 
 ```bash
 brew install jackchuka/tap/confluence-md
@@ -47,7 +47,7 @@ brew install jackchuka/tap/edinet
 
 ### [git-customs](https://github.com/jackchuka/git-customs)
 
-Pre-push gate that catches PII and secrets before they reach a public remote
+Client-side, cross-host pre-push gate that catches PII and secrets — using an engine you choose — before anything reaches a public remote.
 
 ```bash
 brew install jackchuka/tap/git-customs
@@ -87,7 +87,7 @@ brew install jackchuka/tap/latch
 
 ### [mdschema](https://github.com/jackchuka/mdschema)
 
-Declarative schema-based Markdown structure validator
+A declarative schema-based Markdown validator that helps maintain consistent documentation structure across projects.
 
 ```bash
 brew install jackchuka/tap/mdschema
@@ -95,7 +95,7 @@ brew install jackchuka/tap/mdschema
 
 ### [poker-rs](https://github.com/jackchuka/poker-rs)
 
-Poker hand evaluator with a terminal No-Limit Texas Hold'em game
+High-performance poker hand evaluation library written in Rust, with a Ratatui TUI for playing No-Limit Texas Hold'em.
 
 ```bash
 brew install jackchuka/tap/poker-rs
@@ -119,7 +119,7 @@ brew install jackchuka/tap/slackcli
 
 ### [tfpacker](https://github.com/jackchuka/tfpacker)
 
-Organize Terraform blocks into rule-based .tf files
+Organize Terraform resource, module, data, and variable blocks into clean, rule-based .tf files. Group by type, name prefix, or both, with optional YAML config.
 
 ```bash
 brew install jackchuka/tap/tfpacker
@@ -127,7 +127,7 @@ brew install jackchuka/tap/tfpacker
 
 ### [timestack](https://github.com/jackchuka/timestack)
 
-Time, in layers. A countdown timer that nests
+Timestack is a countdown timer that nests. Define your agenda as a tree of timed segments
 
 ```bash
 brew install --cask jackchuka/tap/timestack
