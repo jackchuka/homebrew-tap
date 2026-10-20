@@ -1,27 +1,27 @@
 class Tfpacker < Formula
   desc 'Organize Terraform resource, module, data, and variable blocks into clean, rule-based .tf files. Group by type, name prefix, or both, with optional YAML config.'
-  version '0.2.13'
+  version '0.2.14'
   homepage 'https://github.com/jackchuka/tfpacker'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.13/tfpacker_0.2.13_darwin_arm64.tar.gz'
-      sha256 '69c997f8b4c5737a0332990b87f476186101b853ebc94d9116101d3ffd362ed5'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.14/tfpacker_0.2.14_darwin_arm64.tar.gz'
+      sha256 '03040c4c4214641ba42bf19b49de828d1288ab318e034f27c4c871e9e2d8ef52'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.13/tfpacker_0.2.13_darwin_amd64.tar.gz'
-      sha256 'bd178adfe8257dcff43363092bc8fa25cb1629ebddbdce50cf32ab03ecc37fc5'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.14/tfpacker_0.2.14_darwin_amd64.tar.gz'
+      sha256 '88c6f5d10f194d3443f7d893f1940ed34742f41b2a52f3792679f9d4eea73184'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.13/tfpacker_0.2.13_linux_arm64.tar.gz'
-      sha256 'f476bd291e94b3ad9b9e2ce9cad59a21205315edbd06bcf7eb02c04a403a9c2c'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.14/tfpacker_0.2.14_linux_arm64.tar.gz'
+      sha256 '910d546cc56cb3fc23f88a33a08b5c542974871ee37c6c76d5283e548614f9c5'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.13/tfpacker_0.2.13_linux_amd64.tar.gz'
-      sha256 '09e963ee971570a12c40e64f0d2f48b05d599a5b3990c2a1f0f23aa54c1f378c'
+      url 'https://github.com/jackchuka/tfpacker/releases/download/v0.2.14/tfpacker_0.2.14_linux_amd64.tar.gz'
+      sha256 '9abad1e2b51de710d8126dd8564d96b667458907aad3c336011821918b5256bd'
     end
   end
 
