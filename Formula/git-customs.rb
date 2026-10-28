@@ -1,27 +1,27 @@
 class GitCustoms < Formula
   desc 'Client-side, cross-host pre-push gate that catches PII and secrets — using an engine you choose — before anything reaches a public remote.'
-  version '0.1.6'
+  version '0.1.7'
   homepage 'https://github.com/jackchuka/git-customs'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.6/git-customs_0.1.6_darwin_arm64.tar.gz'
-      sha256 '1a09ff75eabb37492d7a18829816ab66163a429ded6d2830b17fba8631860fa8'
+      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.7/git-customs_0.1.7_darwin_arm64.tar.gz'
+      sha256 'c01de88ebdac7ab6c7d3995989921887aa45a45561ce9608e4ab24d739ef6227'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.6/git-customs_0.1.6_darwin_amd64.tar.gz'
-      sha256 '8fa293df453db0823a348b9358ab403e5e65d0cb2f09fa28c3607a01c3823b57'
+      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.7/git-customs_0.1.7_darwin_amd64.tar.gz'
+      sha256 'c965eaa814d84009a87b3a47b3a69783d62d3bfc17eb13596dc652ac0d8efc8b'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.6/git-customs_0.1.6_linux_arm64.tar.gz'
-      sha256 'c4d99cec1be3b7ed718502f7de9f3b0daf939fc0d50191cdda8a134f2d24ecb1'
+      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.7/git-customs_0.1.7_linux_arm64.tar.gz'
+      sha256 'ec807da5c134dc9bfb622c45e8b3d9e48388c6ef43dfa3b6c9a17b2cb3f06874'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.6/git-customs_0.1.6_linux_amd64.tar.gz'
-      sha256 '57e42851307a39d53341bc092edeb4eb3182b3880a40a8989927721559a9f97d'
+      url 'https://github.com/jackchuka/git-customs/releases/download/v0.1.7/git-customs_0.1.7_linux_amd64.tar.gz'
+      sha256 'dd34d00a31f19619be6fd5d8a5caecb62505aadca1309e9df055203d1c362f8d'
     end
   end
 

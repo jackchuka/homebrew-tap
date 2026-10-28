@@ -1,28 +1,28 @@
 class Postura < Formula
   desc 'A deterministic CLI that audits your GitHub enterprise, orgs, and repos against a security baseline you own — rules are data, the bar is per-target.'
-  version '0.4.1'
+  version '0.4.2'
   homepage 'https://github.com/jackchuka/postura'
   license 'MIT'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/postura/releases/download/v0.4.1/postura_0.4.1_darwin_arm64.tar.gz'
-      sha256 '93b40a5676fdd2f8d3dde147983cee4d6d6031ac78427acce84fcdc4076be9d3'
+      url 'https://github.com/jackchuka/postura/releases/download/v0.4.2/postura_0.4.2_darwin_arm64.tar.gz'
+      sha256 '5dc8daf8aa7e7e48596c0970c57d2e86437ada23dfdb56d9529608a299cde896'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/postura/releases/download/v0.4.1/postura_0.4.1_darwin_amd64.tar.gz'
-      sha256 'f7c66e61b310f0e3e155f57b749b4d072c8c829aecf5e9b3c2a9e9778f950fdd'
+      url 'https://github.com/jackchuka/postura/releases/download/v0.4.2/postura_0.4.2_darwin_amd64.tar.gz'
+      sha256 '10f9ab571ee40bc8bc3c33cc9915fa639c7e393d354ce982bac16411d8636516'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/postura/releases/download/v0.4.1/postura_0.4.1_linux_arm64.tar.gz'
-      sha256 '030b737baa4bbc51f1fc84c9afc41e8f2e2c4fa94bec1887600d8185fd393249'
+      url 'https://github.com/jackchuka/postura/releases/download/v0.4.2/postura_0.4.2_linux_arm64.tar.gz'
+      sha256 '1c4572a20dc9405957ffd1008a42fa742196be058c26d30384850c0244ba60fe'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/postura/releases/download/v0.4.1/postura_0.4.1_linux_amd64.tar.gz'
-      sha256 'e713c5b9af96b2a2d47200045297cd617f603492ffcc5193c8fcea97bda7804b'
+      url 'https://github.com/jackchuka/postura/releases/download/v0.4.2/postura_0.4.2_linux_amd64.tar.gz'
+      sha256 'cb66d01d5c0c22a8f0226c7b451fe025cc561dc8d1b60803ffc15c25d4c9a212'
     end
   end
 
