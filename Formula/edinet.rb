@@ -1,27 +1,27 @@
 class Edinet < Formula
   desc 'A single-binary CLI for EDINET — search, download, and extract Japanese corporate filings from the FSA disclosure system'
-  version '0.2.3'
+  version '0.2.4'
   homepage 'https://github.com/jackchuka/edinet-cli'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.3/edinet_0.2.3_darwin_arm64.tar.gz'
-      sha256 '7473bc9e578db5d8115b4f6e314bb3d468c3e48f2c090b3dab1eb6286d47508b'
+      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.4/edinet_0.2.4_darwin_arm64.tar.gz'
+      sha256 '695a5cb465316aef88e5186ac6a7d2738fa8ffbbde19b94295ce826228c3b16c'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.3/edinet_0.2.3_darwin_amd64.tar.gz'
-      sha256 '872dd42970cbca2dcd5319df9499e0cc2a17477fc202c15fca9ad3053984a60e'
+      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.4/edinet_0.2.4_darwin_amd64.tar.gz'
+      sha256 '388dbbea63f4f7ca4c68434b3d2bcd2642d609b5562dd8c53cb2b08545174cdc'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.3/edinet_0.2.3_linux_arm64.tar.gz'
-      sha256 'cbbcb57750cda9679ad6872615961e0bfb39974be745db1880bc88af03619a96'
+      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.4/edinet_0.2.4_linux_arm64.tar.gz'
+      sha256 '7658f1a56376098705f861214379e8b59dce180ce278af82f086b7bde8c02777'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.3/edinet_0.2.3_linux_amd64.tar.gz'
-      sha256 'a5b3d1d34c79a9240dd5d473ca98216c47a228b730f9c2dbbe96ec89830ea339'
+      url 'https://github.com/jackchuka/edinet-cli/releases/download/v0.2.4/edinet_0.2.4_linux_amd64.tar.gz'
+      sha256 '944bd48d57d85a58f86b06e41e12d7c4382843531886d9d1fe540c8617cc35ef'
     end
   end
 
